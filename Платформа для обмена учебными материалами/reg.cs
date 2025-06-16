@@ -31,7 +31,7 @@ namespace Платформа_для_обмена_учебными_материа
                     sqlCommand.Parameters.AddWithValue("@password", auth.md5(txtPassword.Text));
                     sqlCommand.Parameters.AddWithValue("@fio", $"{txtSurname.Text} {txtName.Text} {txtSecName.Text}");
                     sqlCommand.Parameters.AddWithValue("@mail", txtMail.Text);
-                    sqlCommand.Parameters.AddWithValue("@date", DateTime.Now.Date.ToString());
+                    sqlCommand.Parameters.AddWithValue("@date", date.Value);
                     sqlCommand.ExecuteNonQuery();
                     auth.con.Close();
                     MessageBox.Show("Успешая регистрация");

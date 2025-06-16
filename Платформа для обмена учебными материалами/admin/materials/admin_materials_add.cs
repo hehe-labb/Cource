@@ -63,8 +63,8 @@ namespace Платформа_для_обмена_учебными_материа
                     var Random = new Random();
                     int ranint = Random.Next(1000000, 9999999);
                     FileInfo fileInfo = new FileInfo(linklblFile.Text);
-                    string newpath = $@"E:\курсач\Платформа для обмена учебными материалами\Платформа для обмена учебными материалами\bin\Debug\server\{ranint}{fileInfo.Extension}";
-                    File.Copy(fileInfo.FullName, newpath);
+                    string newpath = $@"\server\{ranint}{fileInfo.Extension}";
+                    File.Copy(fileInfo.FullName, Application.StartupPath + newpath);
                     auth.con.Open();
                     SqlCommand DataCommand = new SqlCommand("INSERT INTO Materials (id, name, description, path_to_file, extension, id_users, date_create) VALUES (@id, @name, @desc, @path, @ext, @id_users, @date)", auth.con);
                     DataCommand.Parameters.AddWithValue("@id", ranint);

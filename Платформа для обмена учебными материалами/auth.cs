@@ -9,6 +9,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Платформа_для_обмена_учебными_материалами.admin.users;
 
 namespace Платформа_для_обмена_учебными_материалами
 {
@@ -36,11 +37,17 @@ namespace Платформа_для_обмена_учебными_материа
                     case "1":       // ADMIN
                         this.Hide();
                         admin.admin admin = new admin.admin(this, Convert.ToInt32(reader[0].ToString()));
+                        con.Close();
                         admin.Show();
                         break;
                     case "2":       // USER
+                        this.Hide();
+                        client.user user = new client.user(Convert.ToInt32(reader[0].ToString()));
+                        con.Close();
+                        user.Show();
                         break;
                     default:
+                        con.Close();
                         break;
                 }
             }

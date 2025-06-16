@@ -38,14 +38,15 @@
             this.lblMail = new System.Windows.Forms.Label();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.linkLblRegistration = new System.Windows.Forms.LinkLabel();
-            this.lblAuth = new System.Windows.Forms.Label();
-            this.lblSurname = new System.Windows.Forms.Label();
-            this.txtSurname = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
             this.lbl = new System.Windows.Forms.Label();
             this.txtSecName = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblSurname = new System.Windows.Forms.Label();
+            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.linkLblRegistration = new System.Windows.Forms.LinkLabel();
+            this.lblAuth = new System.Windows.Forms.Label();
+            this.date = new System.Windows.Forms.DateTimePicker();
             this.pnlMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,6 +156,57 @@
             this.pnlMain.Size = new System.Drawing.Size(309, 682);
             this.pnlMain.TabIndex = 15;
             // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(28, 530);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(77, 21);
+            this.lbl.TabIndex = 20;
+            this.lbl.Text = "Отчество";
+            // 
+            // txtSecName
+            // 
+            this.txtSecName.Location = new System.Drawing.Point(28, 554);
+            this.txtSecName.MaxLength = 20;
+            this.txtSecName.Name = "txtSecName";
+            this.txtSecName.Size = new System.Drawing.Size(246, 29);
+            this.txtSecName.TabIndex = 19;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(28, 455);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(41, 21);
+            this.lblName.TabIndex = 18;
+            this.lblName.Text = "Имя";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(28, 479);
+            this.txtName.MaxLength = 20;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(246, 29);
+            this.txtName.TabIndex = 17;
+            // 
+            // lblSurname
+            // 
+            this.lblSurname.AutoSize = true;
+            this.lblSurname.Location = new System.Drawing.Point(28, 384);
+            this.lblSurname.Name = "lblSurname";
+            this.lblSurname.Size = new System.Drawing.Size(75, 21);
+            this.lblSurname.TabIndex = 16;
+            this.lblSurname.Text = "Фамилия";
+            // 
+            // txtSurname
+            // 
+            this.txtSurname.Location = new System.Drawing.Point(28, 408);
+            this.txtSurname.MaxLength = 20;
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(246, 29);
+            this.txtSurname.TabIndex = 15;
+            // 
             // linkLblRegistration
             // 
             this.linkLblRegistration.AutoSize = true;
@@ -176,56 +228,14 @@
             this.lblAuth.TabIndex = 0;
             this.lblAuth.Text = "Регистрация";
             // 
-            // lblSurname
+            // date
             // 
-            this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(28, 384);
-            this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(75, 21);
-            this.lblSurname.TabIndex = 16;
-            this.lblSurname.Text = "Фамилия";
-            // 
-            // txtSurname
-            // 
-            this.txtSurname.Location = new System.Drawing.Point(28, 408);
-            this.txtSurname.MaxLength = 20;
-            this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(246, 29);
-            this.txtSurname.TabIndex = 15;
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(28, 455);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(41, 21);
-            this.lblName.TabIndex = 18;
-            this.lblName.Text = "Имя";
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(28, 479);
-            this.txtName.MaxLength = 20;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(246, 29);
-            this.txtName.TabIndex = 17;
-            // 
-            // lbl
-            // 
-            this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(28, 530);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(77, 21);
-            this.lbl.TabIndex = 20;
-            this.lbl.Text = "Отчество";
-            // 
-            // txtSecName
-            // 
-            this.txtSecName.Location = new System.Drawing.Point(28, 554);
-            this.txtSecName.MaxLength = 20;
-            this.txtSecName.Name = "txtSecName";
-            this.txtSecName.Size = new System.Drawing.Size(246, 29);
-            this.txtSecName.TabIndex = 19;
+            this.date.CalendarFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.date.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.date.Location = new System.Drawing.Point(126, 338);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(183, 29);
+            this.date.TabIndex = 122;
             // 
             // reg
             // 
@@ -234,6 +244,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(373, 737);
             this.Controls.Add(this.pnlMain);
+            this.Controls.Add(this.date);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -266,5 +277,6 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.TextBox txtSurname;
+        private System.Windows.Forms.DateTimePicker date;
     }
 }
