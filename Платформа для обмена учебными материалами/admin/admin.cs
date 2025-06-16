@@ -11,6 +11,7 @@ using Платформа_для_обмена_учебными_материала
 using Платформа_для_обмена_учебными_материалами.admin.users;
 using Платформа_для_обмена_учебными_материалами.admin.materials;
 using Платформа_для_обмена_учебными_материалами.admin.download;
+using Платформа_для_обмена_учебными_материалами.admin.comment;
 //using Платформа_для_обмена_учебными_материалами.admin.download;
 //using Платформа_для_обмена_учебными_материалами.admin.comment;
 
@@ -60,6 +61,12 @@ namespace Платформа_для_обмена_учебными_материа
         {
             admin_download admin_Download = new admin_download(this);
             admin_Download.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            admin_comment admin_Comment = new admin_comment(this);
+            admin_Comment.Show();
         }
     }
 }

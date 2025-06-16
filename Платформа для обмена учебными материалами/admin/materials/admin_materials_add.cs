@@ -56,7 +56,7 @@ namespace Платформа_для_обмена_учебными_материа
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (lblName.Text != string.Empty || lblDesc.Text != string.Empty || linklblFile.Text != string.Empty)
+            if (txtName.Text != string.Empty || rtxtDesc.Text != string.Empty || linklblFile.Text != string.Empty)
             {
                 if (MessageBox.Show("Вы хотите добавить запись?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {

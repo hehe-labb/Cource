@@ -150,6 +150,12 @@
     <EmbeddedResource Include="admin\comment\admin_comment.resx">
       <DependentUpon>admin_comment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="admin\comment\admin_comment_add.resx">
+      <DependentUpon>admin_comment_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\comment\admin_comment_edit.resx">
+      <DependentUpon>admin_comment_edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin\download\admin_download.resx">
       <DependentUpon>admin_download.cs</DependentUpon>
     </EmbeddedResource>
