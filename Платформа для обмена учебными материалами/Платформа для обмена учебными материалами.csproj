@@ -112,6 +112,12 @@
     <Compile Include="client\user_material_add.Designer.cs">
       <DependentUpon>user_material_add.cs</DependentUpon>
     </Compile>
+    <Compile Include="client\user_material_check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client\user_material_check.Designer.cs">
+      <DependentUpon>user_material_check.cs</DependentUpon>
+    </Compile>
     <Compile Include="trash\admin_role_add.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="client\user_material_add.resx">
       <DependentUpon>user_material_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client\user_material_check.resx">
+      <DependentUpon>user_material_check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="trash\admin_role_add.resx">
       <DependentUpon>admin_role_add.cs</DependentUpon>

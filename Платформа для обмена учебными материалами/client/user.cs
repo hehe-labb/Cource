@@ -45,7 +45,7 @@ namespace Платформа_для_обмена_учебными_материа
             reader.Close();
             command.Dispose();
             pnlMain.Controls.Clear();
-            command = new SqlCommand("SELECT Materials.name, Materials.extension, Materials.id_users, Users.fio, Materials.date_create, (SELECT COUNT(*) FROM Comment WHERE Comment.id_material = Materials.id) AS comment_count, (SELECT COUNT(*) FROM Download WHERE Download.id_material = Materials.id) AS download_count FROM Materials INNER JOIN Users ON Materials.id_users = Users.id", auth.con);
+            command = new SqlCommand("SELECT Materials.name, Materials.extension, Materials.id_users, Users.fio, Materials.date_create, (SELECT COUNT(*) FROM Comment WHERE Comment.id_material = Materials.id) AS comment_count, (SELECT COUNT(*) FROM Download WHERE Download.id_material = Materials.id) AS download_count, Materials.id FROM Materials INNER JOIN Users ON Materials.id_users = Users.id", auth.con);
             reader = command.ExecuteReader();
             int y1 = -185;
             int y2 = 185;
@@ -104,6 +104,7 @@ namespace Платформа_для_обмена_учебными_материа
                     Location = new System.Drawing.Point(12, 125),
                     Size = new System.Drawing.Size(182, 42),
                     Text = "Подробнее",
+                    Tag = reader[7].ToString(),
                     UseVisualStyleBackColor = false
                 };
                 button.FlatAppearance.BorderSize = 0;
@@ -170,7 +171,8 @@ namespace Платформа_для_обмена_учебными_материа
         }
         private void Button_Click(object sender, EventArgs e)
         {
-            
+            var s = sender as Button;
+            MessageBox.Show(s.Tag.ToString());
         }
 
         private void user_FormClosing(object sender, FormClosingEventArgs e)
